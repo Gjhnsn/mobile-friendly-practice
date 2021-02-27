@@ -6,10 +6,11 @@ html {
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
   padding-bottom: 100px;
 }
 
-.wave_container {
+.wave_header {
   background: linear-gradient(180deg, #05d3fd, rgb(0, 0, 0));
   position: relative;
   display: block;
@@ -17,31 +18,31 @@ body {
   height: 60vh;
 }
 
-.content-container {
-  min-height: 100%;
-}
-
+/* wave svg */
 .divider {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.content {
-  /* text-align: center; */
+/* title text */
+.title {
   color: white;
   display: flex;
+  height: 60%;
   justify-content: center;
+  align-items: center;
 }
 
-.content h1 {
+.title h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-  position: relative;
-  top: 125px;
+  /* position: relative;
+  top: 125px; */
 }
 
+/* section text  */
 .text_container {
   margin: 0 auto;
   width: 70%;
@@ -58,6 +59,7 @@ body {
   margin-bottom: 50px;
 }
 
+/* footer */
 .footer {
   position: absolute;
   bottom: 0;
@@ -72,4 +74,22 @@ body {
   text-align: center;
   position: relative;
   top: 25%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wave_header {
+    background: linear-gradient(180deg, #386940, rgb(0, 0, 0));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wave_header {
+    background: linear-gradient(180deg, #45315c, rgb(0, 0, 0));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wave_header {
+    background: linear-gradient(180deg, #e29090, rgb(0, 0, 0));
+  }
 }
